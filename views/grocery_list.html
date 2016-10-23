@@ -5,13 +5,7 @@
     </a>
     <ul class="list-group">
         <li ng-repeat="item in groceryItems | orderBy: 'date'" class="list-group-item text-center clearfix">
-            <button type="button" class="btn btn-sm btn-success pull-right">
-                <span class="glyphicon glyphicon-unchecked"></span>
-            </button>
-            <span style="font-weight:bold">{{ item.itemName | uppercase}}</span>
-            <button type="button" class="btn btn-sm btn-default pull-left">
-                <span class="glyphicon glyphicon-pencil"></span>
-            </button>
+            <tb-grocery-item/>
         </li>
     </ul>
 </div>
